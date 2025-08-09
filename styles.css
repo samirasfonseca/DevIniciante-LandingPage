@@ -1,0 +1,541 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-repeat: repeat;
+  background-size: cover;
+  background-color: #f7eacc;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: 900;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center;    
+}
+
+
+.btn {
+  font-size: 1.2rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #003049, #540b0e);
+  color: #F4D58D;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 2rem;
+}
+
+.btn:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, #540b0e, #003049);
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+
+/* NAVBAR DESKTOP */
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #540b0e;
+  color: white;
+  position: relative;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00bcd4;
+}
+
+/* Botão hambúrguer */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #1e1e2f;
+    flex-direction: column;
+    width: 100%;
+    display: none;
+    padding: 1rem 2rem;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+}
+
+
+
+/* hero */
+.hero {
+  background: url('assets/img/banner-dev.png') no-repeat center center/cover;
+  color: #f4d58d;
+  text-align: left;
+  padding: 8rem 2rem; 
+  height: auto;
+  min-height: 60vh; 
+  display: flex;
+  align-items: center; 
+}
+
+
+.hero h1 {
+    font-size: 2.5rem;
+    
+}
+
+.hero .btn {
+  background-color: #540b0e;
+  color: #f4d58d;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 1rem;
+  display: inline-block;
+  border-left: 5rem;
+}
+
+.hero .btn:hover {
+    color: #fff;
+    background-color: #e36414;
+    transform: scale(1.05);
+}
+
+/* fim hero */
+
+/* Módulos do Curso */
+.modulos h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: 900;
+    
+}
+
+
+.modulo-lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.modulo {
+    background: #19323C;
+    background: linear-gradient(251deg, rgba(25, 50, 60, 1) 33%, rgba(90, 0, 1, 1) 100%);
+    border-radius: 1.3rem;
+    text-align: center;
+    border: #540b0e solid 1px;
+    font-weight: 900;
+    color: #fff;
+    box-shadow: 10px 10px 5px lightblue;
+}
+
+.modulo:hover {
+    background: #F4D58D;
+    background: linear-gradient(251deg, rgba(244, 213, 141, 1) 2%, rgba(90, 0, 1, 1) 100%);
+    transform: scale(1.05);
+}
+
+
+.tecnologias-conteudo {
+  background-color: #540b0e;
+  color: #f4d58d;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7rem;
+  height: 5rem;
+  width: 100%;
+  list-style: none;
+  flex-wrap: wrap;
+  padding: 1rem;
+  text-align: center;
+}
+
+.conteudo:hover {
+  color: #800080;
+}
+
+/* Botão */
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.btn {
+  background-color: #800080;
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #540b0e;
+}
+
+/* Responsivo para telas menores */
+@media (max-width: 768px) {
+  .tecnologias-conteudo {
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1.5rem;
+    height: auto;
+  }
+
+  .btn {
+    width: 80%;
+    font-size: 1rem;
+  }
+}
+
+
+.depoimentos {
+  padding: 2rem;
+}
+
+.depoimentos h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #540b0e;
+}
+
+.depoimentos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  text-align: center;
+}
+
+.depoimento {
+  background: linear-gradient(251deg, rgba(25, 50, 60, 1) 33%, rgba(90, 0, 1, 1) 100%);
+  border-radius: 1rem;
+  width: 15rem;
+  padding: 1rem;
+  border: #540b0e solid 1px;
+  color: #fff;
+  box-shadow: 10px 10px 5px lightblue;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.depoimento:hover {
+  background: linear-gradient(251deg, rgba(244, 213, 141, 1) 2%, rgba(90, 0, 1, 1) 100%);
+  transform: scale(1.05);
+}
+
+.depoimento p {
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+}
+
+/* Responsivo para telas menores */
+@media (max-width: 768px) {
+  .depoimentos-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .depoimento {
+    width: 90%;
+    max-width: 20rem;
+  }
+
+  .depoimentos h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/*Certificado*/
+.certificado {
+  text-align: center;
+  padding: 2rem;
+}
+
+.certificado h2 {
+  font-size: 2rem;
+  text-align: left;
+  margin-left: 5rem;
+}
+
+/* Essa div será o container horizontal */
+.conteudo-certificado {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem; 
+  flex-wrap: wrap; 
+  max-width: 1000px;
+  margin: 0 auto; 
+  text-align: left;
+}
+
+.conteudo-certificado p {
+  flex: 1;
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+
+.certificado-img {
+  max-width: 300px;
+  width: 300;
+  height: auto;
+  flex-shrink: 0;
+  box-shadow: 10px 10px 5px lightblue;
+}
+
+strong {
+  color: #540b0e;
+}
+/*Fim Certificado*/
+
+/*Área Bonus*/
+.bonus {
+  padding: 3rem 2rem;
+  /* background-color: #f4d58d; */
+  text-align: center;
+}
+
+.bonus h2 {
+  font-size: 2.5rem;
+  color: #540b0e;
+  margin-bottom: 2rem;
+}
+
+.bonus-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.bonus-card {
+  background-color: lightblue;
+  border-radius: 12px;
+  padding: 2rem;
+  width: 250px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  box-shadow: 10px 10px 5px #540b0e;
+}
+
+.bonus-card:hover {
+  transform: scale(1.05);
+}
+
+.bonus-card i {
+  font-size: 3rem;
+  color: #540b0e;
+  margin-bottom: 1rem;
+}
+
+.bonus-card h3 {
+  color: #540b0e;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.bonus-card p {
+  color: #333;
+  font-size: 1rem;
+}
+/*Fim da Área Bonus*/
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.matricula-form {
+  background: #003049;
+  color: #f4d58d;
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 70%;
+  max-height: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+.matricula-form h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  margin-bottom: 0.3rem;
+  font-weight: bold;
+}
+
+.form-group input {
+  padding: 0.6rem;
+  border: none;
+  border-radius: 0.5rem;
+  outline: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+  box-shadow: 0 0 10px #f4d58d;
+  transform: scale(1.02);
+}
+
+.btn-form {
+  background: #540b0e;
+  color: #f4d58d;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn-form:hover {
+  background: #f4d58d;
+  color: #540b0e;
+  transform: scale(1.05);
+}
+
+/* Animação de entrada */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsivo para telas menores */
+@media (max-width: 768px) {
+  .matricula-form {
+    width: 90%;
+    max-height: none;
+    padding: 1.5rem;
+  }
+
+  .matricula-form h2 {
+    font-size: 1.5rem;
+  }
+
+  .btn-form {
+    font-size: 1rem;
+    padding: 0.6rem;
+  }
+}
+
+
+/*footer*/
+.footer {
+  background-color: #540b0e;
+  color: #f4d58d;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.footer .social a {
+  color: #f4d58d;
+  margin: 0 0.5rem;
+  font-size: 1.5rem;
+}
