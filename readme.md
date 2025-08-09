@@ -31,6 +31,10 @@ Este projeto foi desenvolvido com foco em **responsividade**, **acessibilidade**
 
 ![Preview do Projeto](assets/img/mockup%20(2).png)
 
+
+
+![https://samirasfonseca.github.io/DevIniciante-LandingPage/]
+
 ---
 
 ## 📚 Módulos do Curso
