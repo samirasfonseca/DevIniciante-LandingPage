@@ -33,7 +33,7 @@ Este projeto foi desenvolvido com foco em **responsividade**, **acessibilidade**
 
 
 
-![https://samirasfonseca.github.io/DevIniciante-LandingPage/]
+![link do site](https://samirasfonseca.github.io/DevIniciante-LandingPage/)
 
 ---
 
