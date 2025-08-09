@@ -32,8 +32,8 @@ Este projeto foi desenvolvido com foco em **responsividade**, **acessibilidade**
 ![Preview do Projeto](assets/img/mockup%20(2).png)
 
 
-
-![link do site](https://samirasfonseca.github.io/DevIniciante-LandingPage/)
+## 🌍 Link do Projeto Online
+🔗 [Acesse o site aqui](https://samirasfonseca.github.io/DevIniciante-LandingPage/)
 
 ---
 
