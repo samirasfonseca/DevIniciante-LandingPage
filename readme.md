@@ -29,7 +29,7 @@ Este projeto foi desenvolvido com foco em **responsividade**, **acessibilidade**
 
 ## 📸 Preview
 
-![Preview do Projeto](assets/img/1.png)
+![Preview do Projeto](assets/img/mockup%20(2).png)
 
 ---
 
